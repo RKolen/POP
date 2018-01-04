@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>POP</title>
+	<link rel="stylesheet" href="styles/POP.css">
+	<script src="scripts/POP.js"></script>
+</head>
+<body> 
+<div class="container">
+		<div class="title">
+		</div>
+		<!--dropdown to content page-->
+		<div class="dropdown"><span>My Information</span>
+			<div class="dropdown-content">
+    			<p><button class="buttons" onclick="divVisibility('Info');">General Information</button></p>
+    			<p><button class="buttons" onclick="divVisibility('Edu');">Education</button></p>
+    			<p><button class="buttons" onclick="divVisibility('Exp');">Experience</button></p>
+    		</div>
+		</div>
+		<div class="dropdown"><button class="buttonpop" onclick="divVisibility('POP');"><span>Personal Development Plan</span></button>
+		</div>
+		<div class="dropdown"><span>Current Projects</span>
+			<div class="dropdown-content">
+    			<p><button class="buttons" onclick="divVisibility('Addressbook');">Address Book</button></p>
+    			<p><button class="buttons" onclick="divVisibility('PDP');">Personal Development Plan</button></p>
+    		</div>
+		</div>
+		<div class="dropdown"><span>Finished Projects</span>
+			<div class="dropdown-content">
+    			<p><button class="buttons" onclick="divVisibility('HTML');">HTML Fundamentals</button></p>
+    			<p><button class="buttons" onclick="divVisibility('CSS');">CSS Fundamentals</button></p>
+    			<p><button class="buttons" onclick="divVisibility('Javascript');">Javascript Tutorial</button></p>
+    		</div>
+		</div>
+
+		<div class="main_div">
+			<div class="inner_div">
+				<div class="innercontents" id="Info">
+				<h2>Raymond Kolen</h2>
+					<div class="contents">
+						<p> Hello! I am Raymond Kolen, welcome to my portfolio. In this portfolio I will add content from my studies as a developer. It will contain projects I have completed, projects I am currently working on, and a plan for me to follow. There will also be some content about me and what I have done previously.</p>
+					</div>
+					<br>
+					<div class="contents">
+						<p class="contents" style="float: right;">Contact me:<a href="mailto:rkolen2007@gmail.com">Raymond Kolen</a></p>
+					</div>
+
+				</div>
+				<div class="innercontents" id="Edu" style="display: none;">
+					<h2>Education</h2>
+						<div class="contents">
+							<p><strong>CodeGorilla</strong></p>
+							<p><img src="images/datumicoon.png" alt="date icon" height="20";>2017-present</p>
+							<p> Learning to code</p>
+						</div>
+						<br>
+						<div class="contents">
+							<p><strong>Rijks Universiteit Groningen, Chemical Engineering</strong></p>
+							<p><img src="images/datumicoon.png" alt="date icon" height="20";>2001-2010</p>
+							<p>Master Degree</p>
+						</div>
+						<br>
+						<div class="contents">
+							<p><strong>Reitdiep College Kamerlingh Onnes, VWO</strong></p>
+							<p><img src="images/datumicoon.png" alt="date icon" height="20";>1993-2001</p>
+							<p>Pre-University secondary Education</p>
+						</div>
+				</div>
+				<div class="innercontents" id="Exp" style="display: none;">
+					<h2>Work Experience</h2>
+					<div class="contents">
+						<p><strong>Computerhelp</strong></p>
+						<p><img src="images/datumicoon.png" alt="date icon" height="20";>-Present</p>
+						<p> Helping people in the neighbourhood with installing computers/smartphones, cleaning-up computers.
+							Teaching people how to use email systems and Excel etc.</p>
+					</div>
+					<br>
+					<div class="contents">
+						<p><strong>Dirkse Milieutechniek (DMT)</strong></p>
+						<p><img src="images/datumicoon.png" alt="date icon" height="20";>2009</p>
+						<p>Evaluation and Improving Caustic Scrubbers at various Chemical plants, including the program used to design the Caustic Scrubbers</p>
+					</div>
+				</div>
+				<div class="innercontents" id="Addressbook" style="display: none;">
+					<h3> Name Project: AddressBook</h3>
+					<div class="contents">
+						<h4>Brief description</h4>
+						<p> The objective for this project is to create a functional addressbook. Using the knowledge obtained by the selfstudy of HTML, CSS and Javascript. The materials used were Sololearn, Khan academy and w3schools.</p>
+						<p>The link to my addressbook: <a href="https://github.com/RKolen/Addressbook" target="_blank" class="links"> My Addressbook</a>
+						</p>
+					</div>
+				</div>
+				<div class="innercontents" id="PDP" style="display: none;">
+					<h3> Name Project: Personal Development Plan</h3>
+					<div class="contents">
+						<h4>Brief description</h4>
+						<p> The objective for this project is to create a setup for a portfolio, containing a Personal Development Plan. Using the knowledge obtained by the selfstudy of HTML, CSS and Javascript. The materials used were Sololearn, Khan academy and w3schools.</p>
+						<p>The link to my addressbook: <a href="https://github.com/RKolen/POP" target="_blank" class="links"> My Personal Development Plan</a>
+						</p>
+					</div>
+				</div>
+				<div id="HTML" style="display: none;"><img src="images/cert-1014-7089917.jpg" alt="HTML certificate" height="500"></div>
+				<div id="CSS" style="display: none;"><img src="images/cert-1023-7089917.jpg" alt="Css certificate" height="500" ></div>
+				<div id="Javascript" style="display: none;"><img src="images/cert-1024-7089917.jpg" alt="Js certificate" height="500"></div>
+				<!-- At first I wanted to make the personal development plan interactive, so I would be able to add goals, edit them and delete them.
+				I based that idea off the addressbook I did earlier. However that would mean anyone could alter my goals. I would solve that by using a login feature for the use of the buttons to edit/delete. After some research it became clear to me that I would not be able to do that in just html,css and js alone and would need php for that. Since this was outside the scope of our assignment I decided it would be better to put the entire POP in an accordion with tables instead.-->
+				<div class="innercontents" id="POP" style="display: none;">
+					<div class="title">
+						<br>
+						<h2>Personal Development Plan</h2>
+					</div>
+
+					<button class="accordion">Goal 1</button>
+						<div class="panel">
+						  	<table>
+							  	<tr>
+							    	<th></th>
+							    	<th>Description</th>
+							  	</tr>
+							  	<tr>
+							    	<td>Goal</td>
+							    	<td>The main goal is to learn PHP.</td>
+							  	</tr>
+							  	<tr>
+							    	<td>Current Level</td>
+							    	<td>Currently I do not have any knowledge regarding PHP.</td>
+							  	</tr>
+							  	<tr>
+							    	<td>Desired Level</td>
+							    	<td>The desired level will be to be able to individually create programs and solve problems that occur.</td>
+							  	</tr>
+							  	<tr>
+							    	<td>Date Start</td>
+							    	<td><img src="images/datumicoon.png" alt="date icon" height="20";>15-January-2018</td>
+							  	</tr>
+							  	<tr>
+							    	<td>Date End</td>
+							    	<td><img src="images/datumicoon.png" alt="date icon" height="20";>15-April-2018</td>
+							  	</tr>
+							  	<tr>
+							    	<td>Activity</td>
+							    	<td>Participation in CodeGorilla Bootcamp. This will make up the main part of the Bootcamp, according to the Kick-off meeting. Using the Google method 6h will be used daily to learn about PHP.</td>
+							  	</tr>
+							  	<tr>
+							    	<td>Requirements</td>
+							    	<td>In order to achieve this I will require to pass the Hackathon and receive instructions on where to start my studies.</td>
+							  	</tr>
+							</table>
+						</div>
+
+					<button class="accordion">Goal 2</button>
+						<div class="panel">
+						  	<table>
+							  	<tr>
+							    	<th></th>
+							    	<th>Description</th>
+							  	</tr>
+							  	<tr>
+							    	<td>Goal</td>
+							    	<td>The second goal is to learn Java.</td>
+							  	</tr>
+							  	<tr>
+							    	<td>Current Level</td>
+							    	<td>Currently I do not have any knowledge regarding Java.</td>
+							  	</tr>
+							  	<tr>
+							    	<td>Desired Level</td>
+							    	<td>The desired level will be to be able to individually create programs and solve problems that occur.</td>
+							  	</tr>
+							  	<tr>
+							    	<td>Date Start</td>
+							    	<td><img src="images/datumicoon.png" alt="date icon" height="20";>15-January-2018</td>
+							  	</tr>
+							  	<tr>
+							    	<td>Date End</td>
+							    	<td><img src="images/datumicoon.png" alt="date icon" height="20";>15-April-2018</td>
+							  	</tr>
+							  	<tr>
+							    	<td>Activity</td>
+							    	<td>Participation in CodeGorilla Bootcamp. During the Bootcamp, according to the Google method 2h will be allotted daily to learn about Java.</td>
+							  	</tr>
+							  	<tr>
+							    	<td>Requirements</td>
+							    	<td>In order to achieve this I will require to pass the Hackathon and receive instructions on where to start my studies. If enough students want to learn Java, hopefully a course can be given.</td>
+							  	</tr>
+							</table>
+						</div>
+
+					<button class="accordion">Goal 3</button>
+						<div class="panel">
+						  <table>
+							  	<tr>
+							    	<th></th>
+							    	<th>Description</th>
+							  	</tr>
+							  	<tr>
+							    	<td>Goal</td>
+							    	<td>The third goal is to learn the use of Visual Studio.</td>
+							  	</tr>
+							  	<tr>
+							    	<td>Current Level</td>
+							    	<td>Currently I have very little knowledge regarding Visual Studio.</td>
+							  	</tr>
+							  	<tr>
+							    	<td>Desired Level</td>
+							    	<td>I have seen Visual Studio be used to create mods for a game I play. I would eventually like to be able to make my own mods.</td>
+							  	</tr>
+							  	<tr>
+							    	<td>Date Start</td>
+							    	<td><img src="images/datumicoon.png" alt="date icon" height="20";>8-January-2018</td>
+							  	</tr>
+							  	<tr>
+							    	<td>Date End</td>
+							    	<td><img src="images/datumicoon.png" alt="date icon" height="20";>8-June-2018</td>
+							  	</tr>
+							  	<tr>
+							    	<td>Activity</td>
+							    	<td>Finding documentation about Visual Studio, I will try to create mods in my spare time.</td>
+							  	</tr>
+							  	<tr>
+							    	<td>Requirements</td>
+							    	<td>-</td>
+							  	</tr>
+							</table>
+						</div>
+				</div>
+			</div>
+		</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,142 @@
+body {
+  margin: 0px;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+h2, h3 {
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 2px;
+  border-bottom: 6px solid white;
+}
+.container {
+  margin-top: 5px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-left: 10px;
+  margin-bottom: 50px;
+  padding: 20px 20px;
+  background-color: rgb(33, 80, 26);
+  border-right: 3px solid rgb(14, 64, 15);
+  border-bottom: 3px solid rgb(14, 64, 15);
+  color: #FFF;
+  font-size: 20px;
+  cursor: pointer;
+  align-content: center;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(33, 80, 26);
+  border-right: 3px solid rgb(14, 64, 15);
+  border-bottom: 3px solid rgb(14, 64, 15);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0 ,0.2);
+  padding: 2px 2px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.buttons {  position: relative;
+  display: inline-block;
+  margin-left: 2px;
+  margin-bottom: 2px;
+  padding: 2px;
+  background-color: rgb(33, 80, 26);
+  border: 2px solid rgb(14, 64, 15);
+  border-radius: 2px;
+  color: #FFF;
+  font-size: 14px;
+  align-content: center;
+  cursor: pointer;
+}
+
+.buttons:hover { /*to make it more clear this is a button*/
+  opacity: 0.5;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+.buttonpop { /* a special button which behaves as the dropdown, but also as a button */
+  position: relative;
+  display: inline-block;
+  padding: 2px;
+  background-color: rgb(33, 80, 26);
+  border: none;
+  color: #FFF;
+  font-size: 20px;
+  align-content: center;
+  cursor: pointer;
+}
+
+.buttonpop:hover { /*to make it more clear this is a button*/
+  opacity: 0.5;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+/* Main area of the page that changes on button press */
+.main_div {
+  margin-left: 15%;
+  position: relative;
+  background-color: rgb(33, 80, 26);
+  width: 70%;
+  color: #FFF;
+  min-height: 300px;
+  border-right: 3px solid rgb(14, 64, 15);
+  border-bottom: 3px solid rgb(14, 64, 15);
+}
+
+#HTML, #CSS, #Javascript {
+  padding-top: 5px;
+}
+/*contents of personal development plan*/
+.accordion {
+  margin-top: 5px;
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.innercontents {
+  text-align: left;
+  padding-left: 5px;
+  padding-right: 5px;
+
+}
+.panel {
+  margin: 5px;
+  padding: 0 18px;
+  display: none;
+  color: rgb(0, 0, 0);
+  background-color: white;
+}
+/* makes the links a little more clear */
+.links {
+    font-size: 20px;
+    background-color: transparent;
+    cursor:pointer;
+}
+/* using icons and more text is less easy to read/see in the green background so changing it to black font and white background is preferable*/
+.contents {
+  text-align: left;
+  padding: 5px;
+  color: rgb(0, 0, 0);
+  background-color: white;
+}
